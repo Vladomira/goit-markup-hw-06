@@ -762,10 +762,10 @@ body {
     letter-spacing: var(--letter-spacing);
     text-transform: uppercase;
     color: var(--white-color);
-  
 }
-
-
+textarea {
+    resize:none;
+}
 /* ==========footer end=========== */
 
 /* modalbtn-form */

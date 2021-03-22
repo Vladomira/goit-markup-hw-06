@@ -414,20 +414,27 @@
     <div class="application-form">
       <h2 class="application-title">Оставьте свои данные, мы вам перезвоним</h2>
       <form name="application" autocomplete="on">
-        <label type="text" name="" for="">
-          Имя 
-          <!-- <input type="text"> -->
-        </label>
-        <label type="tel" name="" for="">
-          Телефон
-        </label>
-        <label type="email" name="" for="">
-          Почта
-        </label>
-        <label type="" name="" for=""></label>
+        <label for="name">Имя</label>           
+        <input type="text" name="name" id="name">
+       
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel">
 
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail">
+        <label>
+          Коментарий
+        <textarea name="coment" rows="" placeholder="Введите текст"></textarea>
+        </label> 
 
+        <!--check-box-->
+        <input type="checkbox" name="confidence" value="css" id="confidence">
+        <label for="confidence">Соглашаюсь с рассылкой и принимаю<a class="link">Условия договора</a></label>
+            
+           <!-- radio -->
 
+         
+        
 
         <button type="submit">Отправить</button>
       </form>
