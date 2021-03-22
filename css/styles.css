@@ -744,10 +744,49 @@ body {
     border-radius: 50%; 
     color: #fff;
 }  
+
+/* form */
+.subscription {
+    /* display: flex;
+    direction: column; */
+  
+    margin-right: auto;
+}
+
+.subscription-title {
+    display: block;
+    padding-bottom: 20px;
+    font-weight: var(--font-weight-variable);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+    color: var(--white-color);
+  
+}
+
+
 /* ==========footer end=========== */
 
-/* backdrop+modalbtn */
+/* modalbtn-form */
+.application-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.application-title{
+    display: block;
+    padding-bottom: 12px;
+    font-weight: var( --font-weight-variable);
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+}
 
+
+
+/* backdrop+modal */
 .backdrop {
     position: fixed;
     top: 0;
@@ -763,23 +802,22 @@ body {
 }
 .backdrop-modal {
     position: absolute;
+    width: 528px;
+    height: 581px;
+    background-color: #fff; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(1turn) scaleX(1);
-    width: 528px;
-    height: 581px;    
-    background-color: #fff;
     border-radius: 4px;
     opacity: 1;  
-
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms; 
 }
-.is-hidden .backdrop-modal {
+.backdrop.is-hidden .backdrop-modal {
     transform: translate(-50%, -50%) rotate(0) scaleX(0);
     opacity: 0;
 }
-.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     /* visibility: hidden; */
     pointer-events: none;

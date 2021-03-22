@@ -390,9 +390,19 @@
       </li>
      </ul>
     </div>
+    <div class="subscription">
+      <b class="subscription-title">Подпишитесь на рассылку</b>
+      <form name="sign-up">
+        <input type="email" name="email" id="" placeholder="E-mail">
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+
     </div>
   </div> 
   </footer> 
+
+
   <div class="backdrop is-hidden" data-modal>
     <div class="backdrop-modal">
      <button type="button" class="modal-close-btn" data-modal-close>
@@ -400,10 +410,33 @@
         <use href="./images/symbol-defs.svg#icon-close-symbol">
         </use>
       </svg>
-    </button>
+    </button>    
+    <div class="application-form">
+      <h2 class="application-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <form name="application" autocomplete="on">
+        <label type="text" name="" for="">
+          Имя 
+          <!-- <input type="text"> -->
+        </label>
+        <label type="tel" name="" for="">
+          Телефон
+        </label>
+        <label type="email" name="" for="">
+          Почта
+        </label>
+        <label type="" name="" for=""></label>
+
+
+
+
+        <button type="submit">Отправить</button>
+      </form>
+
+    </div>
+
+
   </div>
   </div>   
-
   <script src="./js/modal.js"></script>
 </body>
 </html>
