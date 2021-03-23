@@ -411,36 +411,29 @@
         </use>
       </svg>
     </button>    
-    <div class="application-form">
-      <h2 class="application-title">Оставьте свои данные, мы вам перезвоним</h2>
-      <form name="application" autocomplete="on">
-        <label for="name">Имя</label>           
-        <input type="text" name="name" id="name">
+    <!-- form -->  
+      <form class="form" name="form" autocomplete="on">
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <label for="name" class="label-text">Имя</label>           
+        <input class="input-field" type="text" name="name" id="name">
        
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel">
+        <label for="tel" class="label-text">Телефон</label>
+        <input class="input-field" type="tel" name="tel" id="tel">
 
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail">
-        <label>
-          Коментарий
-        <textarea name="coment" rows="" placeholder="Введите текст"></textarea>
-        </label> 
+        <label for="mail" class="label-text">Почта</label>
+        <input class="input-field" type="email" name="mail" id="mail">
+        <label for="comment" class="label-text">Коментарий</label> 
+        <textarea id="comment" name="comment" rows="" placeholder="Введите текст"></textarea>
+        
 
         <!--check-box-->
         <input type="checkbox" name="confidence" value="css" id="confidence">
-        <label for="confidence">Соглашаюсь с рассылкой и принимаю<a class="link">Условия договора</a></label>
+        <label for="confidence">
+         <span class="confidence-text">Соглашаюсь с рассылкой и принимаю</span></label>
+          <a href="" class="confidence-link">Условия договора</a>
             
-           <!-- radio -->
-
-         
-        
-
-        <button type="submit">Отправить</button>
+       <button type="submit" class="submit-btn"><span class="submit-text">Отправить</span></button>
       </form>
-
-    </div>
-
 
   </div>
   </div>   
