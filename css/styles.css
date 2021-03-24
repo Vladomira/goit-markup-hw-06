@@ -790,15 +790,22 @@ body {
     border-radius: 4px;
 }
 .input-field{
+   
+}
+.input-form-name {
+    position: relative;
     margin-bottom: 10px;
 }
-.input-field::before{
-    content: "";
+.icon-person {
+    position: absolute;
     display: block;
-    background-image: url(../images/symbol-defs.svg#person-black);
-    outline: tomato;
+    left: 12px;
+    bottom: 11px;
+    /* outline: 1px solid tomato; */
     width: 18px;
     height: 18px;
+    fill: var(--main-color);  
+   
 }
 
 .label-text {
