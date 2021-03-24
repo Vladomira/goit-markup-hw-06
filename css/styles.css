@@ -792,6 +792,15 @@ body {
 .input-field{
     margin-bottom: 10px;
 }
+.input-field::before{
+    content: "";
+    display: block;
+    background-image: url(../images/symbol-defs.svg#person-black);
+    outline: tomato;
+    width: 18px;
+    height: 18px;
+}
+
 .label-text {
     display: block;
     font-size: 12px;
