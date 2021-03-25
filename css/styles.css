@@ -914,7 +914,7 @@ input.sign-up-email[placeholder] {
     background-color: var(--accent-color);
     border: none;
     background-position: center;
-    transform: scale(1.5);
+    transform: scale(1.2);
     outline: none;
 }
 .form-chekbox-square:focus + .modal-form-checkbox::before {
