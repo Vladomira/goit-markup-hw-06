@@ -390,17 +390,23 @@
       </li>
      </ul>
     </div>
+    <!-- subscription-form -->
     <div class="subscription">
       <b class="subscription-title">Подпишитесь на рассылку</b>
-      <form name="sign-up">
-        <input type="email" name="email" id="" placeholder="E-mail">
-        <button type="submit">Подписаться</button>
+      <form class="sign-up">
+        <input type="email" name="email" class="sign-up-email" placeholder="E-mail">
+        <button type="submit" class="sign-up-btn">Подписаться 
+         <svg class="icon-send" width="24" height="24">
+           <use href="./images/symbol-defs.svg#icon-send"></use>
+         </svg>  
+        </button>
       </form>
     </div>
 
     </div>
   </div> 
   </footer> 
+<!-- footer -->
 
 
   <div class="backdrop is-hidden" data-modal>
@@ -418,9 +424,9 @@
           <label class="label-text">
             Имя    
           <span class="wrapper-user-field">     
-            <input class="input-field" type="text" name="-user-name">
+            <input class="input-field" type="text" name="-user-name" required>
             <svg class="form-icon"  width="18" height="18">
-              <use href="./images/icons.svg#person-black"></use>
+              <use href="./images/symbol-defs.svg#person-black"></use>
             </svg>
         </span>  
         </label> 
@@ -430,7 +436,7 @@
           <span class="wrapper-user-field">
            <input class="input-field" type="tel" name="tel" required title="0961111111">
            <svg class="form-icon" width="18" height="18">
-              <use href="./images/icons.svg#phone-black"></use>
+              <use href="./images/symbol-defs.svg#phone-black"></use>
             </svg>
         </span>  
         </label>        
@@ -440,18 +446,18 @@
         <span class="wrapper-user-field">
           <input class="input-field" type="email" name="mail" id="mail" required>
          <svg class="form-icon" width="18" height="18">
-           <use href="./images/icons.svg#email-black"></use>
+           <use href="./images/symbol-defs.svg#email-black"></use>
          </svg>
         </span>
         </label>
         
         <label class="label-text">
           Коментарий
-        <textarea class="user-comment-text" name="comment" rows="" placeholder="Введите текст"></textarea>
+        <textarea class="user-comment-text" name="comment" placeholder="Введите текст"></textarea>
       </label> 
 
         <!--check-box-->
-        <input class="form-chekbox-square visually-hidden"  type="checkbox" name="confidence" value="css" id="confidence" checked>
+        <input class="form-chekbox-square visually-hidden"  type="checkbox" name="confidence" value="css" id="confidence">
         <label for="confidence" class="modal-form-checkbox">
            Соглашаюсь с рассылкой и принимаю&nbsp;
          <a href="" class="confidence-link">Условия договора</a>
