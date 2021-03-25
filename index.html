@@ -412,31 +412,50 @@
       </svg>
     </button>    
     <!-- form -->  
-      <form class="form" name="form" autocomplete="on">
-          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-       <div class="input-form-name">
-          <label for="name" class="label-text">Имя</label>           
-          <input class="input-field" type="text" name="name" id="name">
-          <svg class="icon-person"  width="18" height="18">
-            <use href="./images/icons.svg#person-black"></use>
-          </svg>
-      </div>
+      <form class="form" name="form" autocomplete="off">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+   
+          <label class="label-text">
+            Имя    
+          <span class="wrapper-user-field">     
+            <input class="input-field" type="text" name="-user-name">
+            <svg class="form-icon"  width="18" height="18">
+              <use href="./images/icons.svg#person-black"></use>
+            </svg>
+        </span>  
+        </label> 
 
-        <label for="tel" class="label-text">Телефон</label>
-        <input class="input-field" type="tel" name="tel" id="tel">
+        <label  class="label-text">
+          Телефон
+          <span class="wrapper-user-field">
+           <input class="input-field" type="tel" name="tel" required title="0961111111">
+           <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#phone-black"></use>
+            </svg>
+        </span>  
+        </label>        
         
-
-        <label for="mail" class="label-text">Почта</label>
-        <input class="input-field" type="email" name="mail" id="mail">
-        <label for="comment" class="label-text">Коментарий</label> 
-        <textarea id="comment" name="comment" rows="" placeholder="Введите текст"></textarea>
+        <label for="mail" class="label-text">
+          Почта
+        <span class="wrapper-user-field">
+          <input class="input-field" type="email" name="mail" id="mail" required>
+         <svg class="form-icon" width="18" height="18">
+           <use href="./images/icons.svg#email-black"></use>
+         </svg>
+        </span>
+        </label>
         
+        <label class="label-text">
+          Коментарий
+        <textarea class="user-comment-text" name="comment" rows="" placeholder="Введите текст"></textarea>
+      </label> 
 
         <!--check-box-->
         <input type="checkbox" name="confidence" value="css" id="confidence" checked>
-        <label for="confidence">
-         <span class="confidence-text">Соглашаюсь с рассылкой и принимаю</span></label>
-          <a href="" class="confidence-link">Условия договора</a>
+        <label for="confidence" class="modal-form-checkbox">
+         <span class="confidence-text">Соглашаюсь с рассылкой и принимаю</span>&nbsp;
+         <a href="" class="confidence-link">Условия договора</a>
+        </label>
             
        <button type="submit" class="submit-btn"><span class="submit-text">Отправить</span></button>
       </form>
