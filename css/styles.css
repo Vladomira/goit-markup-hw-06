@@ -1006,7 +1006,6 @@ input.sign-up-email[placeholder] {
 
     transform: scale(0.9);   
 }
-
 .modal-close-btn {
     position: absolute;
     display: flex;
@@ -1020,5 +1019,20 @@ input.sign-up-email[placeholder] {
     border-radius: 50%;
     border:  1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.modal-close-btn:focus,
+.modal-close-btn:hover {
+    color: var(--accent-color);
+    border-color: 1px solid var(--accent-color);
+}
+.close-icon {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.close-icon:focus,
+.close-icon:hover {
+    color: var(--accent-color);
 }
 
+/*--- end--- */
