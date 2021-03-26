@@ -148,7 +148,7 @@ body {
     background-color: var(--accent-color);
     opacity: 0;
     transform: scaleX(0);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms,
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
 .decoration-changes:hover::after {
@@ -485,7 +485,7 @@ body {
 /* our clients */
 .clients {
     padding-bottom: var(--padding-of-section);
-    padding-top: 40px;
+    padding-top: 94px;
 }
 .clients-title {
     display: block;
@@ -799,6 +799,7 @@ input.sign-up-email[placeholder] {
     justify-content: space-between;
     margin-left: 12px;
     cursor: pointer;
+    border: none;
    
     font-weight: var(--font-weight-variable);
     font-size: 16px;
@@ -829,7 +830,7 @@ input.sign-up-email[placeholder] {
 .wrapper-user-field {
     position: relative;
     display: block;
-    margin-bottom: 10px;
+   
     margin-top: 4px;
 }
 .input-field {
@@ -865,15 +866,19 @@ input.sign-up-email[placeholder] {
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--paragraph-color);
+    margin-bottom: 10px;
+   
 }
-
+.label-textarea {
+    margin-bottom: 20px;
+}
 .user-comment-text {
     resize:none;
     width: 100%;
     min-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 20px;
+   
     margin-top: 4px;
     padding: 12px 16px;
 
@@ -950,7 +955,8 @@ input.sign-up-email[placeholder] {
     cursor: pointer;   
     margin-top: 30px; 
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    border: none; 
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -993,8 +999,8 @@ input.sign-up-email[placeholder] {
     transform: translate(-50%, -50%) rotate(1turn) scaleX(1);
     border-radius: 4px;
     opacity: 1;  
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms; 
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .backdrop.is-hidden .backdrop-modal {
     transform: translate(-50%, -50%) rotate(0) scaleX(0);
@@ -1021,20 +1027,17 @@ input.sign-up-email[placeholder] {
     border:  1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:focus,
 .modal-close-btn:hover {
     color: var(--accent-color);
     border-color: 1px solid var(--accent-color);
+    fill: var(--accent-color);  
 }
 .close-icon {
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-.close-icon:focus,
-.close-icon:hover {
-    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*--- end--- */
+ 
+       /*--- end--- */
