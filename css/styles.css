@@ -813,7 +813,7 @@ input.sign-up-email[placeholder] {
 
 .form-title{
     display: block;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     font-weight: var( --font-weight-variable);
     font-size: 20px;
     line-height: 1.15;
@@ -931,6 +931,7 @@ input.sign-up-email[placeholder] {
 .modal-form-checkbox {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: var(--letter-spacing);
